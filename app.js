@@ -112,7 +112,7 @@ app.use(
                 "'self'",
                 "blob:",
                 "data:",
-                `https://res.cloudinary.com/${process.env.CLOUDINARY_CLOUD_NAME}`,
+                `https://res.cloudinary.com/${process.env.CLOUDINARY_CLOUD_NAME}/image/upload`,
                 "https://images.unsplash.com",
                 "https://source.unsplash.com/random",
             ],
