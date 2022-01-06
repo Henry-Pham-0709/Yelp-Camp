@@ -157,7 +157,7 @@ app.use((err, req, res, next) => {
 })
 //Express has a default error handler (the one that show you the error information on the web when some errors occur) (Doesn't work with async callback). Making another handler will let the program to execute THAT handler first. If you call next(__argument), the next error handler will be execute (in the case that you don't have a next handler, default handler will be triggered)
 
-
-app.listen(3000, () => {
-    console.log("LISTENING ON PORT 3000")
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`LISTENING ON PORT ${port}`)
 })
